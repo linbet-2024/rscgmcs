@@ -8,8 +8,8 @@
 		<meta name="description" content="Minecraft Rscgwj Server" />
 		<meta name="keywords" content="optifine, minecraft, fps, lag, antialiasing, hd textures, optifine下载, 我的世界高清优化补丁, mc高清优化补丁, 我的世界optifine, 我的世界光影, 光影补丁" />
 		<title>Minecraft Rscgwj Server</title>
-		<link rel="stylesheet" href="https://cdn.zerodream.net/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdn.zerodream.net/css/optifine.cn.css?s=1">
+		<!-- <link rel="stylesheet" href="https://cdn.zerodream.net/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.zerodream.net/css/optifine.cn.css?s=1"> -->
 	</head>
 	<body>
 		<div class="container">
@@ -43,6 +43,6 @@
 			</div>
 		</div>
 	</body>
-	<script src="https://cdn.zerodream.net/js/jquery.min.js"></script>
-	<script src="https://cdn.zerodream.net/js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdn.zerodream.net/js/jquery.min.js"></script>
+	<script src="https://cdn.zerodream.net/js/bootstrap.min.js"></script> -->
 </html>
