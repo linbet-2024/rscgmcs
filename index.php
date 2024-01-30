@@ -1,82 +1,48 @@
 
+<!DOCTYPE HTML>
 <html>
 	<head>
-		<title><?php echo $name; ?></title>
-		<link rel="shortcut icon" href=<?php echo $iconlink; ?>>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=11">
+		<meta name="description" content="Minecraft Rscgwj Server" />
+		<meta name="keywords" content="optifine, minecraft, fps, lag, antialiasing, hd textures, optifine下载, 我的世界高清优化补丁, mc高清优化补丁, 我的世界optifine, 我的世界光影, 光影补丁" />
+		<title>Minecraft Rscgwj Server</title>
+		<link rel="stylesheet" href="https://cdn.zerodream.net/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.zerodream.net/css/optifine.cn.css?s=1">
 	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1><?php echo $name; ?></h1>
-						<p><?php echo $description; ?></p>
-					</header>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Minecraft服务器状态</h2>
-										</header>
-										<hr>
-										<p>状态：<font color="#2a6c0f"><?php echo $status; ?></font></p>
-										<p>IP 或域名：<font color="#2a6c0f"><?php echo $host; ?></font>
-											<br>主机 IP：<font color="#2a6c0f"><?php echo $hostip; ?></font>
-											<br>端口：<font color="#2a6c0f"><?php echo $port; ?></font></p>
-										<p>MOTD：<font color="#2a6c0f"><?php echo $motd; ?></font>
-											<br>清除颜色参数后的 MOTD：<font color="#2a6c0f"><?php echo $clean_motd; ?></font>
-											<br>颜色参数转为 HTML 的 MOTD：<font color="#2a6c0f"><?php echo $html_motd; ?></font></p>
-										<p>平台：<font color="#2a6c0f"><?php echo $platform; ?></font>
-											<br>游戏类型：<font color="#2a6c0f"><?php echo $gametype; ?></font></p>
-										<p>兼容游戏版本：<font color="#2a6c0f"><?php echo $version; ?></font>
-											<br>服务器使用的软件或核心：<font color="#2a6c0f"><?php echo $software; ?></font></p>
-										<p>可容纳最大玩家数：<font color="#2a6c0f"><?php echo $players_max; ?></font>
-											<br>在线玩家数：<font color="#2a6c0f"><?php echo $players_online; ?></font></p>
-										<p>使用的查询方式：<font color="#2a6c0f"><?php echo $agreement; ?></font>
-											<br>查询用时：<font color="#2a6c0f"><?php echo $processed; ?></font></p>
-										<!-- <hr> -->
-										<h3>目前在线玩家 <font color="#2a6c0f"><?php echo $players_online; ?></font>/<font color="#2a6c0f"><?php echo $players_max; ?></font></h3>
-										<?php if (is_array($Players)) : ?>
-										<?php foreach($Players as $Player) : ?>
-											<?php if ($platform == "MINECRAFT") : ?>
-												<?php echo '<img src="https://cravatar.eu/helmhead/'.htmlspecialchars($Player).'/15.png"> '.htmlspecialchars($Player); ?><br>
-											<?php else: ?>
-												<?php echo '<img src="https://cravatar.eu/helmhead/steve/15.png"> '.htmlspecialchars($Player); ?><br>
-											<?php endif; ?>
-										<?php endforeach; ?>
-										<?php else: ?>
-											无玩家在线。
-										<?php endif; ?>										<hr>
-										<ul class="actions">
-											<li><a href="https://bili33.top" class="button">About GamerNoTitle</a></li>
-											<li><a href="https://github.com/GamerNoTitle/Minecraft-Server-Status" class="button">View on Github</a></li>
-											<li><a href="https://html5up.net" class="button">HTML5UP</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src=<?php echo $imagelink; ?> alt="" /></span>
-								</div>
-							</section>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 mainbox">
+					<div class="header-logo">
+						<h2 class="logo">Rscgwj</h2>
+						<div class="desc">MINECRAFT Rscgwj生存</div>
+					</div>
+					<div class="menu" nowrap>
+						<a href="/home" class="item">首页</a>
+						<a href="/downloads" class="item">下载</a>
+						<a href="https://optifine.net/donate" target="_blank" class="item">赞助</a>
+						<a href="/capeChange" class="item">披风</a>
+						<a href="/faq" class="item">FAQ</a>
+						<a href="/comments" class="item">讨论</a>
+						<a href="/apiDocs" class="item">API</a>
+					</div>
+					<div class="content"><p>OptiFine 是 Minecraft 优化 Mod，它支持高清纹理和许多配置选项，从而使 Minecraft 可以运行得更快，体验更好。</p>
+<p>OptiFine 的官方描述在 <a href="http://www.minecraftforum.net/topic/249637-" target="_blank">Minecraft 论坛</a> 上，以及一些相关资源：<a href="https://github.com/sp614x/optifine/tree/master/OptiFineDoc/assets/minecraft/optifine/lang" target="_blank">翻译</a>，<a href="https://github.com/sp614x/optifine/tree/master/OptiFineDoc/doc" target="_blank">文档</a>，<a href="https://github.com/sp614x/optifine/issues" target="_blank">问题跟踪器</a>。</p>
+<p>本站是 OptiFine 非官方中文介绍网站，由爱好者自行建立，英文官网请访问 <a href="https://optifine.net/" target="_blank">optifine.net</a></p>
+<hr />
+</ul></div>
+					<div class="content-footer">
+						<p <p <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备2024032362号-1</a> </p>
+						<p class="pull-right">下载服务器由 <a href="https://www.zerodream.net/home" target="_blank">ZeroDream</a> 提供</p>
+					</div>
+					
+				</div>
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</div>
 	</body>
+	<script src="https://cdn.zerodream.net/js/jquery.min.js"></script>
+	<script src="https://cdn.zerodream.net/js/bootstrap.min.js"></script>
 </html>
