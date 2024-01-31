@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的世界服务器</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 定期更新在线人数
+            setInterval(function() {
+                $.ajax({
+                    url: 'online.php',  // 替换为你的PHP文件路径
+                    success: function(data) {
+                        $('#onlinePlayers').text(data);
+                    }
+                });
+            }, 5000);  // 每5秒更新一次，可以根据需要调整
+        });
+    </script>
+</head>
+<body>
+    <h1>我的世界服务器</h1>
+    <p>当前在线人数：<span id="onlinePlayers">加载中...</span></p>
+</body>
+</html>

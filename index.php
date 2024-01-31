@@ -10,7 +10,21 @@
 		<title>Minecraft Rscgwj Server</title>
 		<link rel="stylesheet" href="https://cdn.zerodream.net/css/bootstrap.min.css">
 		<!-- <link rel="stylesheet" href="https://cdn.zerodream.net/css/optifine.cn.css?s=1"> -->
-	<link rel="stylesheet"  type="text/css" href="./css/rscg.css"/>
+	<link rel="stylesheet"  type="text/css" href="css/optifine.cn.css"/>
+	<script src="js/jquery-3.6.4.min.js.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 定期更新在线人数
+            setInterval(function() {
+                $.ajax({
+                    url: 'online.php',  // 替换为你的PHP文件路径
+                    success: function(data) {
+                        $('#onlinePlayers').text(data);
+                    }
+                });
+            }, 5000);  // 每5秒更新一次，可以根据需要调整
+        });
+    </script>
 	</head>
 	<body>
 		<div class="container">
@@ -31,6 +45,8 @@
 						<a href="/apiDocs" class="item">API</a> -->
 					</div>
 					<div class="content">
+					<p>当前在线人数：<span id="onlinePlayers">加载中...</span></p>
+
 						<!-- <p>OptiFine 是 Minecraft 优化 Mod，它支持高清纹理和许多配置选项，从而使 Minecraft 可以运行得更快，体验更好。</p>
 <p>OptiFine 的官方描述在 <a href="http://www.minecraftforum.net/topic/249637-" target="_blank">Minecraft 论坛</a> 上，以及一些相关资源：<a href="https://github.com/sp614x/optifine/tree/master/OptiFineDoc/assets/minecraft/optifine/lang" target="_blank">翻译</a>，<a href="https://github.com/sp614x/optifine/tree/master/OptiFineDoc/doc" target="_blank">文档</a>，<a href="https://github.com/sp614x/optifine/issues" target="_blank">问题跟踪器</a>。</p>
 <p>本站是 OptiFine 非官方中文介绍网站，由爱好者自行建立，英文官网请访问 <a href="https://optifine.net/" target="_blank">optifine.net</a></p> -->
