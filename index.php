@@ -38,7 +38,7 @@
 					</div>
 					<div class="menu" nowrap>
 						<a href="/home" class="item">首页</a>
-						<a href="/downloads" class="item">下载</a>
+						<a href="http://map.lintry.top/" class="item">地图</a>
 						<!-- <a href="https://optifine.net/donate" target="_blank" class="item">赞助</a>
 						<a href="/capeChange" class="item">披风</a>
 						<a href="/faq" class="item">FAQ</a>
